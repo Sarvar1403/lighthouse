@@ -1,0 +1,47 @@
+{{define "nav"}}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li>
+                    <a href="/">Boshqaruv paneli</a>
+                </li>
+                <li>
+                    <a href="/campaigns">Kampaniyalar</a>
+                </li>
+                <li>
+                    <a href="/groups">Foydalanuvchilar &amp; Guruhlar</a>
+                </li>
+                <li> <a href="/templates">Elektron pochta shablonlar</a>
+                </li>
+                <li>
+                    <a href="/landing_pages">Uchish sahifalari</a>
+                </li>
+                <li>
+                    <a href="/sending_profiles">Profillarni yuborish</a>
+                </li>
+                <li>
+                    <a href="/settings">Account Sozlamalari</span></a>
+                </li>
+                {{if .ModifySystem}}
+                <li>
+                    <a href="/users">Foydalanuvchi boshqaruvi<span class="nav-badge badge pull-right">Admin</span></a>
+                </li>
+                <li>
+                    <a href="/webhooks">Webhuklar<span class="nav-badge badge pull-right">Admin</span></a>
+                </li>
+                {{end}}
+                <li>
+                    <hr>
+                </li>
+                <li>
+                    <a href="https://docs.getgophish.com/user-guide/">Foydalanuvchi uchun qoʻllanma</a>
+                </li>
+                <li>
+                    <a href="https://docs.getgophish.com/api-documentation/">API hujjatlari</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+{{end}}
